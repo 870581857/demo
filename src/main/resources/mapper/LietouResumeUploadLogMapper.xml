@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.LietouResumeUploadLogMapper">
+    <select id="selectByLietouCompanyId" parameterType="java.lang.Integer" resultType="com.example.demo.entity.LietouResumeUploadLog">
+        select
+        file_name as fileName,
+        user_name as userName
+        from lietou_resume_upload_log
+        where id=#{lietouCompanyId}
+    </select>
+</mapper>
