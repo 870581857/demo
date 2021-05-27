@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 事件发布
- */
+*/
 @Component
 public class SpringEventPublishService implements EventPublishService<ApplicationEvent>, ApplicationContextAware {
 
